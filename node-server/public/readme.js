@@ -1,0 +1,1 @@
+//public文件夹， 存放静态资源（ html、 cs、 js等）。 我这里在public存放用vue开发好、 经过打包后的文件： dist、 index.html。
