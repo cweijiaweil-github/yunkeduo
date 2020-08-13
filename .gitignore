@@ -19,8 +19,6 @@ target/
 *.ipr
 
 ### webpack ###
-vue_webchat/node_modules/
-node-server/node_modules/
 node_modules/
 
 appName/src/test/*
