@@ -29,7 +29,10 @@ app.get('/login', function(req, res) {
     checkFlg.then((data) => {
         console.log("result= " + data) //拿到数据
         if (data) {
-            // res.json("{'namne':'2221122'}");
+
+            //*************************************************************** */
+            //返回给页面用户信息，通过res.send()。前端再把取到的值传到并跳转客服系统。
+            //*************************************************************** */
             res.sendFile(__dirname + "/view/" + "customer.html");
             // res.render(__dirname + "/view/" + "customer.html", { name: 'Andy' });
         } else {
