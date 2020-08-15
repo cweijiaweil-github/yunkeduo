@@ -27,7 +27,7 @@
                 <div class="w-block">
                   <el-avatar :size="150" :src="circleUrl"></el-avatar>
                   <div class="w-logonStatusIcon">
-                    <el-dropdown @command="loginsStatus">
+                    <el-dropdown trigger="click" @command="loginsStatus">
                       <div class="w-statusIcon">
                         <span>
                           <i :class="statusIcon"></i>
