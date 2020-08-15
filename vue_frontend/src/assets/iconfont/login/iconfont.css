@@ -1,0 +1,58 @@
+@font-face {
+    font-family: "iconfont";
+    src: url('iconfont.eot?t=1597497466487');
+    /* IE9 */
+    src: url('iconfont.eot?t=1597497466487#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAOwAAsAAAAACHQAAANhAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDQAqDZINBATYCJAMYCw4ABCAFhG0HYxt6B8gekqQbAgWUA6gCkAB4KDkPX/u9nru7bz+CC4LKxGMlqjpglYmqY1vVSlclOrVsRIbW1eyLqHIoZ83x4eRkRYEJdDssrWlKYERsy5tkUCX/kAMugpY7OGa6FM9b25wyG0fjcSTNtn+LTKIgfSH7YeyClhiJ6wl0rfKB3In7G0FZYe4WiGvIIyhnvIrCEm2hVhxbxDegqp2+KG0Dvga/H//BSWiQNJm578M37yk8/dJ8sFfOVmQDydOD2unMYCeRcQwoxNtK641cFD2mrKuG8y6BFm5L0lTV+g/mD/YKBRBjJjyQtGtJ++hfXpIVDVGZ+X1wF8cafmk6TIJf+kwSv8yYZH6ZMyn8sm/SgDph/QDvgJ8Ie7xvlhRJ6vdrv+kXc/9+azQV7O2h9vfRh4fYg4MMW4wJ2ekVe3sEZa00iIYpPKaOPNe+RdMF/dc6yOAG0VdVRkJNhmM+3msZe8fo/WvsfR7IVcNmmFYrM+XGrsIOSyV0dbPifTYvk6nMWmqZzBUmJdq/3g3Ku7vKUNRA2VCINym9KDAuPf6AXpvm8joMxo/XQG368Meb09trJl4MNjg9OXUpPSdFPP0vKLIv/vkeIwDm7GZE2h5aFlQR7ClKCK4R/q2CykLbpUiz6rG9g9VhS/lpI9E92mxAKd0lXalygveUBA4At1B5SemT1CneFEIVJH/+7beTn1bbU/VD/svaBfygIFmQ3Q0NpeDfyXXm/mR1AQ0IhVATmLpalE7OdrdvIFBtmMWa+KU9/Fzn1MVUssVCXE/czvAYJC0rkLVtIwv2GBo9p1C1nUHXkfiTe2aS5ETp4FABgDDWB8nQd8jGdpAFew6NpXeoxqEMXY/C+Jw9uwG1opMoWlCKjEyETO+YbVhUw8IB8aWJZmlBgJvQbC4DGOgXkE98kqPZFAckp/HrlBSGnCRvMQ7cjIzxmJDkFSWLLi9lEW78/TlVX9RlSixUXZkhkQWSQgxbCEp4DvP6L1QLPz9AuCUjMmvoqLJOkJk5uTwK5CegA/JT6jp13MpLkq1w11IsMIhjxrNQHDATY0U9lFC9lUISC128AeHghj/qxukq7S4vt295ALrMj6qRIkeJJmq0tK6hjqS0ZRHdcbOUtpIJ3VyQi2iy6HIjI2m9hXsupEprAAAAAAA=') format('woff2'), url('iconfont.woff?t=1597497466487') format('woff'), url('iconfont.ttf?t=1597497466487') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url('iconfont.svg?t=1597497466487#iconfont') format('svg');
+    /* iOS 4.1- */
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 18px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+/*登录状态：在线*/
+
+.icon-zaixianim:before {
+    color: #0fe92c;
+    content: "\e617";
+}
+
+
+/*登录状态：离线  （正常图标大小）*/
+
+.icon-likaiim:before {
+    color: #a5a1a1;
+    content: "\e609";
+}
+
+
+/*登录状态：忙碌*/
+
+.icon-mangluim:before {
+    color: #f01919fa;
+    content: "\e60f";
+}
+
+
+/*登录状态：忙碌*/
+
+.icon-yinshenim:before {
+    color: #f3b918fa;
+    content: "\e616";
+}
+
+
+/*登录状态：离开 （大图标）*/
+
+.icon-likaishijian:before {
+    color: #a5a1a1;
+    font-size: 16px;
+    content: "\e61f";
+}
