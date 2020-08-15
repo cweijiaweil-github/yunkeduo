@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 # Compiled class file
@@ -26,6 +27,8 @@
 hs_err_pid*
 =======
 >>>>>>> f2733e8... ''
+=======
+>>>>>>> 0b10cdd198489460e10b26b351bc0fe4bc61bd41
 target/
 !.mvn/wrapper/maven-wrapper.jar
 *.pid
@@ -48,6 +51,7 @@ target/
 
 ### webpack ###
 <<<<<<< HEAD
+<<<<<<< HEAD
 node_modules/
 
 appName/src/test/*
@@ -58,3 +62,8 @@ node_modules/
 appName/src/test/*
 >>>>>>> 8d4c9d6... ''
 >>>>>>> f2733e8... ''
+=======
+node_modules/
+
+appName/src/test/*
+>>>>>>> 0b10cdd198489460e10b26b351bc0fe4bc61bd41
