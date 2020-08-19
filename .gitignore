@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 # Compiled class file
 *.class
 
@@ -50,8 +46,6 @@ target/
 *.ipr
 
 ### webpack ###
-<<<<<<< HEAD
-<<<<<<< HEAD
 node_modules/
 
 appName/src/test/*

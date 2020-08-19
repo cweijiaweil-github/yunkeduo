@@ -1,9 +1,11 @@
-var express = require('express');
-var app = express();
-var http = require('http').Server(app);
-var io = require('socket.io')(http);
+const express = require('express');
+const app = express();
+const http = require('http').Server(app);
+const io = require('socket.io')(http);
 const proxy = require('express-http-proxy');
-
+const bodyParser = require('body-parser'); //bodyParser中间件用来解析http请求体var 
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 const customerController = require("./src/customer/controller/customerController")
 
 //静态资源加载
@@ -24,26 +26,22 @@ app.all('*', function(req, res, next) {
 });
 
 //登录请求
-app.get('/login', function(req, res) {
-    const checkFlg = customerController.userLogin(req.query.username, req.query.password);
-    checkFlg.then((data) => {
+app.post('/login', (req, res) => {
+    console.log("req.body= " + req.body);
+    console.log("req.body.username= " + req.body.username);
+    console.log("req.body.password= " + req.body.password);
+
+    // const checkFlg = customerController.userLogin(req.body.username, req.body.password);
+
+    customerController.userLogin(req.body.username, req.body.password).then((data) => {
         console.log("result= " + data) //拿到数据
         if (data) {
-<<<<<<< HEAD
-            //*************************************************************** */
-            //返回给页面用户信息，通过res.send()。前端再把取到的值传到并跳转客服系统。
-            //*************************************************************** */
-            // res.json("{'namne':'2221122'}");
-=======
-
-            //*************************************************************** */
-            //返回给页面用户信息，通过res.send()。前端再把取到的值传到并跳转客服系统。
-            //*************************************************************** */
->>>>>>> 0b10cdd198489460e10b26b351bc0fe4bc61bd41
-            res.sendFile(__dirname + "/view/" + "customer.html");
+            let obj = { result: data };
+            res.send(JSON.stringify(obj));
+            // res.sendFile(__dirname + "/view/" + "customer.html");
             // res.render(__dirname + "/view/" + "customer.html", { name: 'Andy' });
         } else {
-            res.send("<script>alert('用户名或密码不正确!')</script>");
+            res.send("用户名或密码不正确");
         }
     })
 })
